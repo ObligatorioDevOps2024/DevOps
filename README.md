@@ -1,6 +1,5 @@
 # DevOps
-
-En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y los archivos de configuración para integrar y administrar la configuración del despliegue.
+En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y archivos de configuración para integrar y administrar la configuración de despliegue.
 
 # Universidad ORT Uruguay
 
@@ -18,15 +17,9 @@ En este repositorio se aloja todo lo referente a la documentación generada en e
 
 ---
 
-## Índice
+### El desafío planteado  
+En el marco de la tarea obligatoria para la certificación DevOps, se le solicita al equipo presentar un plan de acción detallado que resuelva las problemáticas operativas y errores que presenta una empresa al poner nuevas versiones de código.  
 
-- Introducción ................................................................. 7
-
----
-
-### El desafío planteado
-
-En el marco de la tarea obligatoria para la certificación DevOps, se le solicita al equipo presentar un plan de acción detallado que resuelva las problemáticas operativas y errores que presenta una empresa al poner nuevas versiones de código.
 
 Se espera que la solución mejore la colaboración, confianza y aprendizaje continuo de los interesados en la puesta en funcionamiento del sistema.
 
@@ -36,7 +29,8 @@ Se espera que la solución mejore la colaboración, confianza y aprendizaje cont
 
 La solución que planteamos, basada en la incorporación de herramientas de vanguardia, altamente confiables, muy utilizadas y probadas actualmente, organiza y facilita las pruebas y el despliegue de forma automática, rápida y con un margen de error mínimo.
 
-Esto permitirá a la empresa ganar confianza y prestigio en la calidad del código publicado, además de liberar recursos para dedicarse a tareas más productivas a nivel de negocio.
+Esto permite a la empresa ganar confianza y prestigio en la calidad del código publicado, además de liberar recursos para dedicarse a otras tareas a nivel de negocio.  
+
 
 #### Plan de despliegue para el frontend
 
@@ -61,10 +55,19 @@ Esto permitirá a la empresa ganar confianza y prestigio en la calidad del códi
 
 ---
 
-### Repositorio GitHub
+### CI CD WorkFlow
+![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
 
+
+### Diagrama
+
+![Diagrama](https://github.com/user-attachments/assets/eb352ba0-d57e-484d-bfca-255f8a06598e)
+
+---
+
+### Repositorio GitHub  
 **Organización en GitHub:** [https://github.com/ObligatorioDevOps2024](https://github.com/ObligatorioDevOps2024)  
-cion
+
 
 ![Imagen de GitHub de organización de repositorios](images/OrganizacionRepositorios.png)
 
@@ -76,7 +79,7 @@ Cada repositorio cuenta con tres ramas:
 
 ---
 
-![Imagen del flujo de de CI-CD propuesto](images/DiagramaCI_CD.jpg)
+
 
 ### Compilado de las aplicaciones de forma local
 
@@ -93,11 +96,12 @@ Cada repositorio cuenta con tres ramas:
 
 ### Despliegue de aplicación de frontend (React)
 
-[http://frontend-app-obligatorio.s3-website-us-east-1.amazonaws.com/](http://frontend-app-obligatorio.s3-website-us-east-1.amazonaws.com/)
 
-#### Configuración adicional: Política de seguridad del bucket
+![img_frontend](https://github.com/user-attachments/assets/16ce0e80-05e2-4785-8f53-34f9956be3db)
 
-Para resolver el error 403 en el navegador, se agregó la siguiente política:
+
+#### Configuración adicional: Política de seguridad del bucket  
+Para resolver el error 403 en el navegador, se agregó la siguiente política:  
 
 ```json
 {
