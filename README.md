@@ -55,7 +55,7 @@ Esto permite a la empresa ganar confianza y prestigio en la calidad del código 
 
 ### Repositorio GitHub  
 **Organización en GitHub:** [https://github.com/ObligatorioDevOps2024](https://github.com/ObligatorioDevOps2024)  
-cion
+
 
 ![Imagen de GitHub de organización de repositorios](images/OrganizacionRepositorios.png)
 
