@@ -17,11 +17,6 @@ En este repositorio se aloja todo lo referente a la documentación generada en e
 
 ---
 
-## Índice  
-- Introducción ................................................................. 7  
-
----
-
 ### El desafío planteado  
 En el marco de la tarea obligatoria para la certificación DevOps, se le solicita al equipo presentar un plan de acción detallado que resuelva las problemáticas operativas y errores que presenta una empresa al poner nuevas versiones de código.  
 
