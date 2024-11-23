@@ -1,4 +1,4 @@
-![imagen](https://github.com/user-attachments/assets/f47f7882-3ba0-40a7-a0fa-63e1012bba1c)# DevOps
+# DevOps
 En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y archivos de configuración para integrar y administrar la configuración de despliegue.
 
 
@@ -53,7 +53,7 @@ Esto permite a la empresa ganar confianza y prestigio en la calidad del código 
 ---
 
 ### CI CD WorkFlow
-**Link:**![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
+![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
 
 
 ---
