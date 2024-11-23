@@ -1,5 +1,5 @@
-# DevOps
-En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y los archivos de configuración para integrar y administrar la configuración del despliegue.
+![imagen](https://github.com/user-attachments/assets/f47f7882-3ba0-40a7-a0fa-63e1012bba1c)# DevOps
+En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y archivos de configuración para integrar y administrar la configuración de despliegue.
 
 
 # Universidad ORT Uruguay  
@@ -32,7 +32,7 @@ Se espera que la solución mejore la colaboración, confianza y aprendizaje cont
 ### La solución lograda  
 La solución que planteamos, basada en la incorporación de herramientas de vanguardia, altamente confiables, muy utilizadas y probadas actualmente, organiza y facilita las pruebas y el despliegue de forma automática, rápida y con un margen de error mínimo.  
 
-Esto permitirá a la empresa ganar confianza y prestigio en la calidad del código publicado, además de liberar recursos para dedicarse a tareas más productivas a nivel de negocio.  
+Esto permite a la empresa ganar confianza y prestigio en la calidad del código publicado, además de liberar recursos para dedicarse a otras tareas a nivel de negocio.  
 
 #### Plan de despliegue para el frontend  
 - **Código fuente:** empaquetado en un bucket de **S3 de AWS**.  
@@ -49,6 +49,12 @@ Esto permitirá a la empresa ganar confianza y prestigio en la calidad del códi
 ### Backlog de tareas  
 **Herramienta:** Microsoft Azure Boards  
 **Link:** [https://dev.azure.com/ms168085ms/](https://dev.azure.com/ms168085ms/)  
+
+---
+
+### CI CD WorkFlow
+**Link:**![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
+
 
 ---
 
