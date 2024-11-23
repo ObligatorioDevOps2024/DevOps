@@ -51,6 +51,10 @@ Esto permite a la empresa ganar confianza y prestigio en la calidad del código 
 ![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
 
 
+### Diagrama
+
+![Diagrama](https://github.com/user-attachments/assets/eb352ba0-d57e-484d-bfca-255f8a06598e)
+
 ---
 
 ### Repositorio GitHub  
