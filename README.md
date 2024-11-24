@@ -115,7 +115,7 @@ Cada repositorio cuenta con tres ramas:
 
 ![Imagen Workflow frontend](images/workflowFrontend.png)
 
-![Imagen Frontend Aws](images/frontendS3Aws.png.png)
+![Imagen Frontend Aws](images/frontendS3Aws.png)
 
 ![img_frontend](https://github.com/user-attachments/assets/16ce0e80-05e2-4785-8f53-34f9956be3db)
 
