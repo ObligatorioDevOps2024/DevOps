@@ -1,4 +1,5 @@
 # DevOps
+
 En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y archivos de configuración para integrar y administrar la configuración de despliegue.
 
 # Universidad ORT Uruguay
@@ -17,9 +18,9 @@ En este repositorio se aloja todo lo referente a la documentación generada en e
 
 ---
 
-### El desafío planteado  
-En el marco de la tarea obligatoria para la certificación DevOps, se le solicita al equipo presentar un plan de acción detallado que resuelva las problemáticas operativas y errores que presenta una empresa al poner nuevas versiones de código.  
+### El desafío planteado
 
+En el marco de la tarea obligatoria para la certificación DevOps, se le solicita al equipo presentar un plan de acción detallado que resuelva las problemáticas operativas y errores que presenta una empresa al poner nuevas versiones de código.
 
 Se espera que la solución mejore la colaboración, confianza y aprendizaje continuo de los interesados en la puesta en funcionamiento del sistema.
 
@@ -29,8 +30,7 @@ Se espera que la solución mejore la colaboración, confianza y aprendizaje cont
 
 La solución que planteamos, basada en la incorporación de herramientas de vanguardia, altamente confiables, muy utilizadas y probadas actualmente, organiza y facilita las pruebas y el despliegue de forma automática, rápida y con un margen de error mínimo.
 
-Esto permite a la empresa ganar confianza y prestigio en la calidad del código publicado, además de liberar recursos para dedicarse a otras tareas a nivel de negocio.  
-
+Esto permite a la empresa ganar confianza y prestigio en la calidad del código publicado, además de liberar recursos para dedicarse a otras tareas a nivel de negocio.
 
 #### Plan de despliegue para el frontend
 
@@ -55,9 +55,11 @@ Esto permite a la empresa ganar confianza y prestigio en la calidad del código 
 
 ---
 
-### CI CD WorkFlow
-![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
+![Imagen de tareas en tablero de Azure progreso](images/TableroAzureProgreso.png)
 
+### CI CD WorkFlow
+
+![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
 
 ### Diagrama
 
@@ -65,9 +67,9 @@ Esto permite a la empresa ganar confianza y prestigio en la calidad del código 
 
 ---
 
-### Repositorio GitHub  
-**Organización en GitHub:** [https://github.com/ObligatorioDevOps2024](https://github.com/ObligatorioDevOps2024)  
+### Repositorio GitHub
 
+**Organización en GitHub:** [https://github.com/ObligatorioDevOps2024](https://github.com/ObligatorioDevOps2024)
 
 ![Imagen de GitHub de organización de repositorios](images/OrganizacionRepositorios.png)
 
@@ -79,29 +81,47 @@ Cada repositorio cuenta con tres ramas:
 
 ---
 
-
-
 ### Compilado de las aplicaciones de forma local
 
 1. **order-service-example**
-   ![Imagen order-service-example](order-service-example.png)
+   ![Imagen order-service-example](images/order-service-example.png)
 
 2. **payments-service-example**
-   ![Imagen payments-service-example](payments-service-example.png)
+   ![Imagen payments-service-example](images/payments-service-example.png)
 
 3. **shipping-service-example**
+
+   ![Imagen shipping-service-example](images/shipping-service-example.png)
+
 4. **products-service-example**
+
+   ![Imagen products-service-example](images/products-service-example.png)
 
 ---
 
+![Imagen aplicaciones](images/aplicaciones.png)
+
+![Imagen aplicaciones2](images/aplicaciones2.png)
+
+![Imagen Shipping-spring](images/shippingSpring.png)
+
+![Imagen Payments-spring](images/paymentsSpring.png)
+
+![Imagen Products-spring](images/productsSpring.png)
+
+![Imagen Orders-spring](images/ordersSpring.png)
+
 ### Despliegue de aplicación de frontend (React)
 
+![Imagen Workflow frontend](images/workflowFrontend.png)
+
+![Imagen Frontend Aws](images/frontendS3Aws.png.png)
 
 ![img_frontend](https://github.com/user-attachments/assets/16ce0e80-05e2-4785-8f53-34f9956be3db)
 
+#### Configuración adicional: Política de seguridad del bucket
 
-#### Configuración adicional: Política de seguridad del bucket  
-Para resolver el error 403 en el navegador, se agregó la siguiente política:  
+Para resolver el error 403 en el navegador, se agregó la siguiente política:
 
 ```json
 {
