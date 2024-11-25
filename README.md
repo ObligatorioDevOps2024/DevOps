@@ -84,6 +84,7 @@ Cada repositorio cuenta con tres ramas:
 ### Compilado de las aplicaciones de forma local
 
 1. **order-service-example**
+
    ![Imagen order-service-example](images/order-service-example.png)
 
 2. **payments-service-example**
