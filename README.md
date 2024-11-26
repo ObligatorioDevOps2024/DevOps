@@ -137,3 +137,62 @@ Para resolver el error 403 en el navegador, se agregó la siguiente política:
   ]
 }
 ```
+
+### Ejemplo de archivo deploy.yml
+
+```json
+name: Build and Deploy Docker Image to ECR
+
+on:
+  push:
+    branches:
+      - main  # O la rama que elijas
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Checkout del código
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Paso 2: Configurar AWS CLI
+      - name: Set up AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
+
+      # Paso 3: Configurar Docker Buildx
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      # Paso 4: Iniciar sesión en Amazon ECR
+      - name: Log in to Amazon ECR
+        run: |
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+
+      # Paso 5: Construir la imagen Docker
+      - name: Build Docker image
+        run: |
+          docker build -t ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/obligatorio/payments:latest .
+
+      # Paso 6: Subir la imagen a ECR
+      - name: Push Docker image to ECR
+        run: |
+          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/obligatorio/payments:latest
+```
+
+### Repositorios en AWS - ECR
+
+![repositorios_ECR](https://github.com/user-attachments/assets/6f10f3fe-151a-4e00-bc7c-ae24f76452cb)
+
+Ejemplo de imagen creada con Github Actions:
+
+![ejemplo_imagen_en_ECR](https://github.com/user-attachments/assets/fe24fbd3-df1e-4d20-a22c-721b9ccfd4ef)
+
+
+
