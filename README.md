@@ -140,8 +140,6 @@ Para resolver el error 403 en el navegador, se agregó la siguiente política:
 
 ### Ejemplo de archivo deploy.yml
 
-```json
-{
 name: Build and Deploy Docker Image to ECR
 
 on:
@@ -186,9 +184,6 @@ jobs:
         run: |
           docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/obligatorio/payments:latest
 
-
-}
-```
 
 ### Repositorios en AWS - ECR
 
