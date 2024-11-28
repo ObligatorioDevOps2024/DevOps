@@ -101,8 +101,8 @@ Cada repositorio cuenta con tres ramas:
 
 ### Compilado de las aplicaciones de forma local
 
-A continuación se dejan las capturas que evidencian las pruebas de correcta compilación de los aplicativos a nivel local,
-este fue el paso inicial para empezar la construcción.
+Para empezar la construcción comenzamos con por la compilación y empaquetado correcto de los aplicativos a nivel local.
+A continuación se dejan las capturas que evidencian las pruebas efectuadas:
 
 1. **order-service-example**
 
@@ -178,3 +178,10 @@ Por último se muestra la imagen ya deployada en EKR construído mediante GitAct
 Ejemplo de imagen creada con Github Actions:
 
 ![ejemplo_imagen_en_ECR](https://github.com/user-attachments/assets/fe24fbd3-df1e-4d20-a22c-721b9ccfd4ef)
+
+### Pruebas de código estático
+
+En todas las aplicaciones fueron aplicadas pruebas de análisis de calidad de código mediante los servicios ofrecidos por la plataforma SonarCloud. Para realizar los mismos se creó una cuenta en la misma, se creó un repositorio en el sitio y se subió al mismo el código fuente mediante la vinculación a GitHub.
+De manera inmediata el código fue analizado y se mostraron en un dashboard los resultados de los diferentes aspectos revisados y las vulnearabilidades y errores encontrados.
+
+Acá va el informe sugerencias de mejoras y las capturas
