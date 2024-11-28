@@ -173,7 +173,7 @@ La siguiente imagen muestra el repositorio construído en la herramienta AWS en 
 
 ![repositorios_ECR](https://github.com/user-attachments/assets/6f10f3fe-151a-4e00-bc7c-ae24f76452cb)
 
-Por último se muestra la imagen desde GitHub donde mediante GitActions se corre el proceso CI/CD que construye y luego despliega correctamente el sistema.
+Por último se muestra la imagen ya deployada en EKR construído mediante GitActions luego de que corriera exitosamente el proceso CI/CD que construyó y luego despliegó el sistema.
 
 Ejemplo de imagen creada con Github Actions:
 
