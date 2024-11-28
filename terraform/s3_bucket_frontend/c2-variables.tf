@@ -10,15 +10,3 @@ variable "s3_bucket_name" {
   type        = string
   default     = "front-obligatorio"
 }
-
-/*variable "s3_bucket_acl" {
-  description = "Access control list for the S3 Bucket"
-  type        = string
-  default     = "private"
-}*/
-
-/*variable "enable_versioning" {
-  description = "Flag to enable versioning on the S3 Bucket"
-  type        = bool
-  default     = false
-}*/
