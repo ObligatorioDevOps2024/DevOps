@@ -10,3 +10,9 @@ variable "s3_bucket_name" {
   type        = string
   default     = "front-obligatorio"
 }
+
+variable "ecr_repo_name" {
+  description = "Repositorio ECR para imagenes"
+  type        = string
+  default     = "frontend-docker-images"
+}
