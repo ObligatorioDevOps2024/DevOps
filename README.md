@@ -32,6 +32,25 @@ La solución que planteamos, basada en la incorporación de herramientas de vang
 
 Esto permite a la empresa ganar confianza y prestigio en la calidad del código publicado, además de liberar recursos para dedicarse a otras tareas a nivel de negocio.
 
+El objetivo es poder mediante los conocimientos, herramientas y laboratorios realizados, unificar los conocimientos y aplicarlos de manera enfocada a resolver nuestra tarea eficientemente.
+
+#### Principales puntos a cumplir
+
+- Empaquetado de aplicaciones en contenedores y manejo mediante orquestador para el despliegue.
+
+- Despliegue automátizado mediante Terraform de la aplicación de frontend y las 4 de backend en la nube pública de AWS Amazon.
+
+
+- Configuración para aplicación de ciclo completos de CI/CD
+
+- Invocación de análisis automático de código y testing de calidad mediante proceso CI/CD desde GitHub Accions.
+
+- Prueba adicional de test de carga, stress o específica con herramienta Postman.
+
+
+
+
+
 #### Plan de despliegue para el frontend
 
 - **Código fuente:** empaquetado en un bucket de **S3 de AWS**.
