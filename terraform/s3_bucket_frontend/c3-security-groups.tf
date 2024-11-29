@@ -39,6 +39,7 @@ resource "aws_security_group" "vpc-web" {
   }
 }
 
+# Create Security Group - EKS
 resource "aws_security_group" "eks_sg" {
   name        = "eks-cluster-sg"
   description = "Security group for EKS cluster"
