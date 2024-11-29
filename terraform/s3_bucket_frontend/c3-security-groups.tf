@@ -38,3 +38,39 @@ resource "aws_security_group" "vpc-web" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+resource "aws_security_group" "eks_sg" {
+  name        = "eks-cluster-sg"
+  description = "Security group for EKS cluster"
+
+  # Allow inbound traffic from the EKS API server
+  ingress {
+    description = "Allow inbound traffic from the EKS API server"
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["100.64.0.0/10"] # CIDR block for the EKS control plane
+  }
+
+  # Allow traffic between EKS worker nodes
+  ingress {
+    description = "Allow communication between nodes in the EKS cluster"
+    from_port   = 1025
+    to_port     = 65535
+    protocol    = "tcp"
+    cidr_blocks = ["10.0.0.0/16"] # Replace with your VPC CIDR
+  }
+
+  # Allow all outbound traffic (for internet access)
+  egress {
+    description = "Allow all outbound traffic"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    Name = "eks-cluster-sg"
+  }
+}
