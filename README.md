@@ -40,16 +40,11 @@ El objetivo es poder mediante los conocimientos, herramientas y laboratorios rea
 
 - Despliegue automátizado mediante Terraform de la aplicación de frontend y las 4 de backend en la nube pública de AWS Amazon.
 
-
 - Configuración para aplicación de ciclo completos de CI/CD
 
 - Invocación de análisis automático de código y testing de calidad mediante proceso CI/CD desde GitHub Accions.
 
 - Prueba adicional de test de carga, stress o específica con herramienta Postman.
-
-
-
-
 
 #### Plan de despliegue para el frontend
 
@@ -207,10 +202,9 @@ El siguiente dashboard muestra para todas las aplicaciones testeadas, los result
 
 ![Imagen análisis Sonar Cloud](images/ResultadosSonarCloud.jpeg)
 
-
 Informe:
 
-De los valores que se obtienen de los resultados de aspectos específicos que fueron analizados por la herramienta, se pueden desprender las siguientes conclusiones: 
+De los valores que se obtienen de los resultados de aspectos específicos que fueron analizados por la herramienta, se pueden desprender las siguientes conclusiones:
 
 Es de prioridad atender los 2 problemas de seguridad detectados, sería importante revisar la aplicación "Orders", ya que presenta un riesgo de tipo alto(2), y de critisidad importante a nivel de confidencialidad, compromiso de datos, acceso no autorizado, o ejecución de código.
 
@@ -218,14 +212,9 @@ También se concluye que tanto la aplicación de frontend como la de backend "or
 
 Dado el resultado en el análisis "HostspostsReviewed" en el frontend y en la aplicación payments, es posible que el equipo no esté realizando revisiones de seguridad en el código, o no las esté registrando adecuadamente. Sería un punto a revisar para mejorar este aspecto de seguridad.
 
+Por otra parte hay problemas que pueden estar relacionados con inconsistencia en la convención de nombres de variables. Sería conveniente revisar y mejorar este aspecto alineándose en manejar una convención definida como camelCase o snake_case para mejorar la legibilidad y mantenimiento del código.
 
-Por otra parte 
-
-
-
-
-
-
+### Construcción de orquestador y deploys
 
 Se creó un orquestador de contenedores para poder manejar los mismos. A continuación se visualiza evidencia de cluster de Kubernete creado y su nodo asociado.
 
@@ -233,14 +222,12 @@ Se creó un orquestador de contenedores para poder manejar los mismos. A continu
 
 ![Imagen del nodo asociado](images/Cluster-Nodo.jpeg)
 
-![Imagen del nodo](images/Nodo.jpeg)
-
+![Imagen del nodo](images/nodo.jpeg)
 
 La siguiente imagen muestra los reporsitorios de imagenes que se crearon en AWS para poder alojar las imágenes del código fuente de las aplicaciones que posteriormente serán invocadas desde el orquestador de contenedores.
 
 ![Imagen de los repositorios para las imagenes de código fuente](images/RepositoriosAWS.jpeg)
 
-
 AWS nos permite visualizar el estado del proceso terraform según la siguiente imagen.
 
-![Imagen del status](images/statusTerraform.jpeg)
+![Imagen del status](images/StatusTerraform.jpeg)
