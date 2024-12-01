@@ -203,7 +203,25 @@ Ejemplo de imagen creada con Github Actions:
 En todas las aplicaciones fueron aplicadas pruebas de análisis de calidad de código, mediante los servicios ofrecidos por la plataforma SonarCloud. Para realizar los mismos se creó una cuenta en la misma, se creó un repositorio en el sitio y se subió al mismo el código fuente mediante la vinculación a GitHub Accions.
 De manera inmediata el código fue analizado y se mostraron en un dashboard los resultados de los diferentes aspectos revisados y las vulnearabilidades y errores encontrados.
 
-Acá va el informe sugerencias de mejoras y las capturas
+El siguiente dashboard muestra para todas las aplicaciones testeadas, los resultados obtenenidos para cada uno de los tipos de análisis que se realizaron.
+
+![Imagen análisis Sonar Cloud](images/ResultadosSonarCloud.jpeg)
+
+
+Informe:
+
+De los valores que se obtienen de los resultados de aspectos específicos que fueron analizados por la herramienta, se pueden desprender las siguientes conclusiones: 
+
+Es de prioridad atender los 2 problemas de seguridad detectados, sería importante revisar la aplicación "Orders", ya que presenta un riesgo de tipo alto(2), y de critisidad importante a nivel de confidencialidad, compromiso de datos, acceso no autorizado, o ejecución de código.
+
+También se concluye que tanto la aplicación de frontend como la de backend "orders", tienen código duplicado que se debería eliminar para mejorar la calidad del código del sistema.
+
+Dado el resultado en el análisis "HostspostsReviewed" en el frontend y en la aplicación payments, es posible que el equipo no esté realizando revisiones de seguridad en el código, o no las esté registrando adecuadamente. Sería un punto a revisar para mejorar este aspecto de seguridad.
+
+
+Por otra parte 
+
+
 
 
 
