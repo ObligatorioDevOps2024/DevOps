@@ -204,3 +204,25 @@ En todas las aplicaciones fueron aplicadas pruebas de análisis de calidad de c�
 De manera inmediata el código fue analizado y se mostraron en un dashboard los resultados de los diferentes aspectos revisados y las vulnearabilidades y errores encontrados.
 
 Acá va el informe sugerencias de mejoras y las capturas
+
+
+
+
+
+Se creó un orquestador de contenedores para poder manejar los mismos. A continuación se visualiza evidencia de cluster de Kubernete creado y su nodo asociado.
+
+![Imagen del Cluster de Kubernete creado](images/Eks.jpeg)
+
+![Imagen del nodo asociado](images/Cluster-Nodo.jpeg)
+
+![Imagen del nodo](images/Nodo.jpeg)
+
+
+La siguiente imagen muestra los reporsitorios de imagenes que se crearon en AWS para poder alojar las imágenes del código fuente de las aplicaciones que posteriormente serán invocadas desde el orquestador de contenedores.
+
+![Imagen de los repositorios para las imagenes de código fuente](images/RepositoriosAWS.jpeg)
+
+
+AWS nos permite visualizar el estado del proceso terraform según la siguiente imagen.
+
+![Imagen del status](images/statusTerraform.jpeg)
