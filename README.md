@@ -1,12 +1,8 @@
-# DevOps
-
-En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y archivos de configuración para integrar y administrar la configuración de despliegue.
-
 # Universidad ORT Uruguay
 
 ## Facultad de Ingeniería
 
-### Obligatorio DevOps 2024
+### Obligatorio DevOps 2024 - Proyecto obligatorio para certificación
 
 **Alejandra Medina - 295013**  
 **Matías Santos - 168085**  
@@ -38,9 +34,9 @@ El objetivo es poder mediante los conocimientos, herramientas y laboratorios rea
 
 - Empaquetado de aplicaciones en contenedores y manejo mediante orquestador para el despliegue.
 
-- Despliegue automátizado mediante Terraform de la aplicación de frontend y las 4 de backend en la nube pública de AWS Amazon.
+- Despliegue automatizado mediante Terraform de la aplicación de frontend y las 4 de backend en la nube pública de AWS Amazon.
 
-- Configuración para aplicación de ciclo completos de CI/CD
+- Configuración para aplicación de ciclos completos de CI/CD
 
 - Invocación de análisis automático de código y testing de calidad mediante proceso CI/CD desde GitHub Accions.
 
@@ -62,8 +58,8 @@ Para cada uno de los aplicativos tanto de backend como de frontend, se presenta 
 el script requerido para la creación de cada de cada una de los mismos.
 
 En el archivo está configurada la secuencia de comandos y parámetros necesarios, para que mediante la herramienta Terraform,
-se construyan los recursos indicados(el buckect S3 o el EKS según corresponda), se obtenga la imagen del aplicativo del repositorio referenciado y
-se depliegue automáticamente sobre el recurso creado si todo ejecutó correctamente.
+se construyan los recursos indicados(el bucket S3 o el EKS según corresponda), se obtenga la imagen del aplicativo del repositorio referenciado y
+se despliegue automáticamente sobre el recurso creado si todo ejecutó correctamente.
 
 ---
 
@@ -83,57 +79,25 @@ En las siguientes imagen se muestra el listado de tareas que inicialmente fue de
 
 ![Imagen de tareas en tablero de Azure progreso](images/TableroAzureProgreso.png)
 
-
 ### Herramientas utilizadas:
 
-## Planificación 
 
-- AzureBoards  Herramienta utilizada para armado del plan de tareas a realizar, organización y seguimiento de las mismas.
-
-## Código
-
-- GitHub     Utilizada como plataforma colaborativa para el alojamiento de los códigos fuentes de los sistemas su organización, manejo de versionados y alojamiento de documentos.
-
-- Azure Repos  
-
-## Build y CI/CD
- 
-- GitHub Actions  Herramienta de GitHub que se utilizó para la implementación de las estragias de CI/CD planificadas.
-
-- Docker Hub  Utilizado como herramienta que brinda espacio en la nube para alojar las imágenes de los contenedores.
-
-## Test
-
-- Postman  Utilizado como entorno local para validación de software y llegada a los endpoints. También utilizado en la prueba específica.
-
-- SonarCloud Plataforma que permite el servicio de análisis de código estático.
+| **Categoría**        | **Herramienta**          | **Descripción**                                                                                       |
+|-----------------------|--------------------------|-------------------------------------------------------------------------------------------------------|
+| **Planificación**     | **Azure Boards**         | Herramienta utilizada para armado del plan de tareas a realizar, organización y seguimiento de las mismas.    |
+| **Código**            | **GitHub**               | Utilizada como plataforma colaborativa para el alojamiento de los códigos fuentes de los sistemas su organización, manejo de versionados y alojamiento de documentos.        |
+|                       | **Azure Repos**          |                                                                                                       |
+| **Build y CI/CD**     | **GitHub Actions**       | Herramienta de GitHub que se utilizó para la implementación de las estragias de CI/CD planificadas.         |
+|                       | **Docker Hub**           | Utilizado como herramienta que brinda espacio en la nube para alojar las imágenes de los contenedores.                                              |
+| **Test**              | **Postman**              | Utilizado como entorno local para validación de software y llegada a los endpoints. También utilizado en la prueba específica.                         |
+|                       | **SonarCloud**           | Plataforma que permite el servicio de análisis de código estático.                                                          |
+| **Deploy**            | **Kubernetes**           | Utilizado como tecnología de contenerización que permita el manejo y despliegue de los distintos contenedores que alojen los distintos sistemas.                                     |
+|                       | **Terraform**            | Utilizado para programar en código la infraestructura definida, y así generar la misma automáticamente una vez se ejecute el archivo.                     |
+|                       | **Docker**               |                                                                                                       |
+| **Cloud**             | **AWS (Amazon Web Services)** | Proveedor que expone los diferentes servicios a utilizar en la nube, para lograr el despliegue de los sistemas.                      |
 
 
-
-
-## Deploy
-
-- Kubernetes  Utilizado como tecnología de contenerización que permita el manejo y despliegue de los distintos contenedores que alojen los distintos sistemas.
-
-- Terraform   Utilizado para programar en código la infraestructura definida, y así generar la misma  automáticamente una vez se ejecute el archivo.
-- Docker
-
-## Cloud 
-
-- AWS (Amazon Web Services) Proveedor que expone los diferentes servicios a utilizar en la nube, para lograr el despliegue de los sistemas.
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 ### CI CD WorkFlow
 
 En los diagramas contiguos se muestra el flujo de etapas por las que avanzaría el proceso de CI/CD
@@ -161,6 +125,10 @@ Cada repositorio cuenta con tres ramas:
 - **main:** contiene el código en producción. Solo se fusionan cambios después de pasar desarrollo y pruebas.
 - **dev:** rama principal de desarrollo para integrar nuevas características.
 - **test:** rama para pruebas, sirve como etapa de verificación antes de producción.
+
+# DevOps
+
+En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y archivos de configuración para integrar y administrar la configuración de despliegue.
 
 ---
 
@@ -257,7 +225,7 @@ Informe:
 
 De los valores que se obtienen de los resultados de aspectos específicos que fueron analizados por la herramienta, se pueden desprender las siguientes conclusiones:
 
-Es de prioridad atender los 2 problemas de seguridad detectados, sería importante revisar la aplicación "Orders", ya que presenta un riesgo de tipo alto(2), y de critisidad importante a nivel de confidencialidad, compromiso de datos, acceso no autorizado, o ejecución de código.
+Es de prioridad atender los 2 problemas de seguridad detectados, sería importante revisar la aplicación "Orders", ya que presenta un riesgo de tipo alto(2), y de criticidad importante a nivel de confidencialidad, compromiso de datos, acceso no autorizado, o ejecución de código.
 
 También se concluye que tanto la aplicación de frontend como la de backend "orders", tienen código duplicado que se debería eliminar para mejorar la calidad del código del sistema.
 
