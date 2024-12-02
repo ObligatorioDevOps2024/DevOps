@@ -79,8 +79,59 @@ En las siguientes imagen se muestra el listado de tareas que inicialmente fue de
 
 ![Imagen de tareas en tablero de Azure progreso](images/TableroAzureProgreso.png)
 
+<<<<<<< HEAD
 ### Herramientas utilizadas:
 
+=======
+
+## Herramientas utilizadas:
+
+### Planificación 
+
+- AzureBoards  Herramienta utilizada para armado del plan de tareas a realizar, organización y seguimiento de las mismas.
+
+### Código
+
+- GitHub     Utilizada como plataforma colaborativa para el alojamiento de los códigos fuentes de los sistemas su organización, manejo de versionados y alojamiento de documentos.
+
+- Azure Repos  
+
+### Build y CI/CD
+ 
+- GitHub Actions  Herramienta de GitHub que se utilizó para la implementación de las estragias de CI/CD planificadas.
+
+- Docker Hub  Utilizado como herramienta que brinda espacio en la nube para alojar las imágenes de los contenedores.
+
+### Test
+
+- Postman  Utilizado como entorno local para validación de software y llegada a los endpoints. También utilizado en la prueba específica.
+
+- SonarCloud Plataforma que permite el servicio de análisis de código estático.
+
+
+
+
+### Deploy
+
+- Kubernetes  Utilizado como tecnología de contenerización que permita el manejo y despliegue de los distintos contenedores que alojen los distintos sistemas.
+
+- Terraform   Utilizado para programar en código la infraestructura definida, y así generar la misma  automáticamente una vez se ejecute el archivo.
+- Docker
+
+### Cloud 
+
+- AWS (Amazon Web Services) Proveedor que expone los diferentes servicios a utilizar en la nube, para lograr el despliegue de los sistemas.
+
+
+
+---
+
+
+
+
+
+
+>>>>>>> be06da357fc60b8620b24280d95789cdbc5c5c96
 
 | **Categoría**        | **Herramienta**          | **Descripción**                                                                                       |
 |-----------------------|--------------------------|-------------------------------------------------------------------------------------------------------|
@@ -99,6 +150,7 @@ En las siguientes imagen se muestra el listado de tareas que inicialmente fue de
 
 ---
 ### CI CD WorkFlow
+
 
 En los diagramas contiguos se muestra el flujo de etapas por las que avanzaría el proceso de CI/CD
 
@@ -212,7 +264,10 @@ Ejemplo de imagen creada con Github Actions:
 
 ![ejemplo_imagen_en_ECR](https://github.com/user-attachments/assets/fe24fbd3-df1e-4d20-a22c-721b9ccfd4ef)
 
-### Pruebas de código estático
+
+---
+
+## Pruebas de código estático
 
 En todas las aplicaciones fueron aplicadas pruebas de análisis de calidad de código, mediante los servicios ofrecidos por la plataforma SonarCloud. Para realizar los mismos se creó una cuenta en la misma, se creó un repositorio en el sitio y se subió al mismo el código fuente mediante la vinculación a GitHub Accions.
 De manera inmediata el código fue analizado y se mostraron en un dashboard los resultados de los diferentes aspectos revisados y las vulnearabilidades y errores encontrados.
@@ -221,7 +276,7 @@ El siguiente dashboard muestra para todas las aplicaciones testeadas, los result
 
 ![Imagen análisis Sonar Cloud](images/ResultadosSonarCloud.jpeg)
 
-Informe:
+### Informe:
 
 De los valores que se obtienen de los resultados de aspectos específicos que fueron analizados por la herramienta, se pueden desprender las siguientes conclusiones:
 
@@ -233,7 +288,7 @@ Dado el resultado en el análisis "HostspostsReviewed" en el frontend y en la ap
 
 Por otra parte hay problemas que pueden estar relacionados con inconsistencia en la convención de nombres de variables. Sería conveniente revisar y mejorar este aspecto alineándose en manejar una convención definida como camelCase o snake_case para mejorar la legibilidad y mantenimiento del código.
 
-### Construcción de orquestador y deploys
+## Construcción de orquestador y deploys
 
 Se creó un orquestador de contenedores para poder manejar los mismos. A continuación se visualiza evidencia de cluster de Kubernete creado y su nodo asociado.
 
