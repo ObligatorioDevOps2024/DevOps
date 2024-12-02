@@ -245,7 +245,10 @@ Ejemplo de imagen creada con Github Actions:
 
 ![ejemplo_imagen_en_ECR](https://github.com/user-attachments/assets/fe24fbd3-df1e-4d20-a22c-721b9ccfd4ef)
 
-### Pruebas de código estático
+
+---
+
+## Pruebas de código estático
 
 En todas las aplicaciones fueron aplicadas pruebas de análisis de calidad de código, mediante los servicios ofrecidos por la plataforma SonarCloud. Para realizar los mismos se creó una cuenta en la misma, se creó un repositorio en el sitio y se subió al mismo el código fuente mediante la vinculación a GitHub Accions.
 De manera inmediata el código fue analizado y se mostraron en un dashboard los resultados de los diferentes aspectos revisados y las vulnearabilidades y errores encontrados.
@@ -254,7 +257,7 @@ El siguiente dashboard muestra para todas las aplicaciones testeadas, los result
 
 ![Imagen análisis Sonar Cloud](images/ResultadosSonarCloud.jpeg)
 
-Informe:
+### Informe:
 
 De los valores que se obtienen de los resultados de aspectos específicos que fueron analizados por la herramienta, se pueden desprender las siguientes conclusiones:
 
@@ -266,7 +269,7 @@ Dado el resultado en el análisis "HostspostsReviewed" en el frontend y en la ap
 
 Por otra parte hay problemas que pueden estar relacionados con inconsistencia en la convención de nombres de variables. Sería conveniente revisar y mejorar este aspecto alineándose en manejar una convención definida como camelCase o snake_case para mejorar la legibilidad y mantenimiento del código.
 
-### Construcción de orquestador y deploys
+## Construcción de orquestador y deploys
 
 Se creó un orquestador de contenedores para poder manejar los mismos. A continuación se visualiza evidencia de cluster de Kubernete creado y su nodo asociado.
 
