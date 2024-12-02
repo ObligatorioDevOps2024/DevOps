@@ -84,25 +84,25 @@ En las siguientes imagen se muestra el listado de tareas que inicialmente fue de
 ![Imagen de tareas en tablero de Azure progreso](images/TableroAzureProgreso.png)
 
 
-### Herramientas utilizadas:
+## Herramientas utilizadas:
 
-## Planificación 
+### Planificación 
 
 - AzureBoards  Herramienta utilizada para armado del plan de tareas a realizar, organización y seguimiento de las mismas.
 
-## Código
+### Código
 
 - GitHub     Utilizada como plataforma colaborativa para el alojamiento de los códigos fuentes de los sistemas su organización, manejo de versionados y alojamiento de documentos.
 
 - Azure Repos  
 
-## Build y CI/CD
+### Build y CI/CD
  
 - GitHub Actions  Herramienta de GitHub que se utilizó para la implementación de las estragias de CI/CD planificadas.
 
 - Docker Hub  Utilizado como herramienta que brinda espacio en la nube para alojar las imágenes de los contenedores.
 
-## Test
+### Test
 
 - Postman  Utilizado como entorno local para validación de software y llegada a los endpoints. También utilizado en la prueba específica.
 
@@ -111,20 +111,20 @@ En las siguientes imagen se muestra el listado de tareas que inicialmente fue de
 
 
 
-## Deploy
+### Deploy
 
 - Kubernetes  Utilizado como tecnología de contenerización que permita el manejo y despliegue de los distintos contenedores que alojen los distintos sistemas.
 
 - Terraform   Utilizado para programar en código la infraestructura definida, y así generar la misma  automáticamente una vez se ejecute el archivo.
 - Docker
 
-## Cloud 
+### Cloud 
 
 - AWS (Amazon Web Services) Proveedor que expone los diferentes servicios a utilizar en la nube, para lograr el despliegue de los sistemas.
 
 
 
-
+---
 
 
 
@@ -135,6 +135,7 @@ En las siguientes imagen se muestra el listado de tareas que inicialmente fue de
 
 
 ### CI CD WorkFlow
+
 
 En los diagramas contiguos se muestra el flujo de etapas por las que avanzaría el proceso de CI/CD
 
