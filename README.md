@@ -260,4 +260,4 @@ AWS nos permite visualizar el estado del proceso terraform según la siguiente i
 
 ## Mejora a futuro
 
-Tenemos presente que las credenciales y secrets de aws se utilizan repetidamente en cada proyecto y al variar cada vez que se inicia el recurso AWS, no resulta nada práctico el estar cambiando en tantos lugares. Por lo que entendemos que de contar con más tiempo implementariamos variables a nivel de la organización para poder manejar estos datos cambiandolos en un único sitio y afectar a todos los repositorios que las utilizan. 
+Tenemos presente que las credenciales y secrets de aws se utilizan repetidamente en cada proyecto, al variar cada vez que se inicia el recurso AWS, no resulta nada práctico el estar cambiando en tantos lugares. Por lo que entendemos que de contar con más tiempo implementaríamos variables a nivel de la organización; para poder manejar estos datos cambiándolos en un único sitio y afectar a todos los repositorios que las utilizan. 
