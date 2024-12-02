@@ -14,7 +14,7 @@
 
 ---
 
-### El desafío planteado
+## El desafío planteado
 
 En el marco de la tarea obligatoria para la certificación DevOps, se le solicita al equipo presentar un plan de acción detallado que resuelva las problemáticas operativas y errores que presenta una empresa al exponer nuevas versiones de código.
 
@@ -22,7 +22,7 @@ Se espera que la solución mejore la colaboración, confianza y aprendizaje cont
 
 ---
 
-### La solución lograda
+## La solución lograda
 
 La solución que planteamos, basada en la incorporación de herramientas de vanguardia, altamente confiables, muy utilizadas y probadas actualmente, organiza y facilita las pruebas y el despliegue de forma automática, rápida y con un margen de error mínimo.
 
@@ -30,7 +30,7 @@ Esto permite a la empresa ganar confianza y prestigio en la calidad del código 
 
 El objetivo es poder mediante los conocimientos, herramientas y laboratorios realizados, unificar los conocimientos y aplicarlos de manera enfocada a resolver nuestra tarea eficientemente.
 
-#### Principales puntos a cumplir
+## Principales puntos a cumplir
 
 - Empaquetado de aplicaciones en contenedores y manejo mediante orquestador para el despliegue.
 
@@ -42,13 +42,13 @@ El objetivo es poder mediante los conocimientos, herramientas y laboratorios rea
 
 - Prueba adicional de test de carga, stress o específica con herramienta Postman.
 
-#### Plan de despliegue para el frontend
+### Plan de despliegue para el frontend
 
 - **Código fuente:** empaquetado en un bucket de **S3 de AWS**.
 - **Aplicación:** accesible mediante un enlace generado para el navegador.
 - **GitHub Actions:** configurado para vincular automáticamente el archivo con el bucket.
 
-#### Plan de despliegue para las aplicaciones de backend
+### Plan de despliegue para las aplicaciones de backend
 
 - **Orquestador:** Kubernetes para manejar los contenedores de los códigos fuente de las aplicaciones de backend.
 - **Empaquetado:** cada aplicación Java será alojada en un contenedor Docker.
@@ -63,7 +63,7 @@ se despliegue automáticamente sobre el recurso creado si todo ejecutó correcta
 
 ---
 
-### Backlog de tareas
+## Backlog de tareas
 
 Se creó un tablero para la gestión administrativa del proyecto, con el fin de poder organizar, distribuir y ver
 de forma ordenada y clara el avance y los pendientes del trabajo a realizar.
@@ -102,20 +102,20 @@ En las siguientes imagen se muestra el listado de tareas que inicialmente fue de
 
 
 ---
-### CI CD WorkFlow
+## CI CD WorkFlow
 
 
 En los diagramas contiguos se muestra el flujo de etapas por las que avanzaría el proceso de CI/CD
 
 ![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
 
-### Diagrama
+## Diagrama
 
 ![Diagrama](https://github.com/user-attachments/assets/eb352ba0-d57e-484d-bfca-255f8a06598e)
 
 ---
 
-### Repositorio GitHub
+## Repositorio GitHub
 
 El equipo resolvió crear 5 repositorios en el gestor de versiones GitHub. En los mismos se alojan el aplicativo de Frontend, los
 cuatro aplicativos de backend facilitados junto a los archivos de configuración que se generen para la solución,
@@ -131,7 +131,7 @@ Cada repositorio cuenta con tres ramas:
 - **dev:** rama principal de desarrollo para integrar nuevas características.
 - **test:** rama para pruebas, sirve como etapa de verificación antes de producción.
 
-# DevOps
+### DevOps
 
 En este repositorio se aloja todo lo referente a la documentación generada en el obligatorio, diagramas y archivos de configuración para integrar y administrar la configuración de despliegue.
 
