@@ -303,5 +303,8 @@ La siguiente imagen muestra los reporsitorios de imagenes que se crearon en AWS 
 ![Imagen de los repositorios para las imagenes de código fuente](images/RepositoriosAWS.jpeg)
 
 AWS nos permite visualizar el estado del proceso terraform según la siguiente imagen.
-
 ![Imagen del status](images/StatusTerraform.jpeg)
+
+## Mejora a futuro
+
+Tenemos presente que las credenciales y secrets de aws se utilizan repetidamente en cada proyecto y al variar cada vez que se inicia el recurso AWS, no resulta nada práctico el estar cambiando en tantos lugares. Por lo que entendemos que de contar con más tiempo implementariamos variables a nivel de la organización para poder manejar estos datos cambiandolos en un único sitio y afectar a todos los repositorios que las utilizan. 
