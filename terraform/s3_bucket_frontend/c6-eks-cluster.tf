@@ -32,7 +32,7 @@ resource "aws_eks_node_group" "node_group" {
     max_size     = 5
   }
 
-  instance_types = ["t2.micro"]
+  instance_types = ["t3.medium"]
   capacity_type  = "ON_DEMAND"
 
   tags = {
