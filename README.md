@@ -265,14 +265,16 @@ La siguiente imagen muestra los reporsitorios de imagenes que se crearon en AWS 
 AWS nos permite visualizar el estado del proceso terraform según la siguiente imagen.
 ![Imagen del status](images/StatusTerraform.jpeg)
 
+
+
 ---
 
 
 ## Aplicación de servicio Serverless
 
-Se utilizó el servicio serverless AWS Lambda para implementar y configurar una tarea automatizada que se acciona en respuesta a eventos de CI/CD, específicamente cada vez que se realiza un commit en la rama main del frontend de la aplicación.
+Se utilizó el servicio serverless AWS Lambda para implementar y configurar una tarea automatizada, que se acciona en respuesta a eventos de CI/CD. Específicamente cada vez que se realiza un commit en la rama main del frontend de la aplicación.
 
-El script que ejecuta la función Lambda al ser invocada por el proceso de CI/CD está immplementado en phyton, pero se puede implementar en el lenguaje de preferencia (Python, Node.js, Java, Go, Ruby, .NET Core), dada la flexibilidad de compatibilidad de la herramienta. 
+El script que ejecuta la función Lambda al ser invocada por el proceso de CI/CD, está immplementado en phyton, pero se puede implementar en el lenguaje de preferencia (Python, Node.js, Java, Go, Ruby, .NET Core), dada la flexibilidad de compatibilidad de la herramienta. 
 A continuación se muestra la ejecución en GitHub del CI/CD posterior a la ejecución del commit, y el mensaje desplegado correctamente.
 
 
@@ -287,7 +289,7 @@ A continuación se muestra la ejecución en GitHub del CI/CD posterior a la ejec
 ![Imagen ejecución Lamba AWS Git](images/LambdaGitHubAccions.png)
 
 
-También a partir de este resultado obtenido, vemos que es posible configurar el envío de mail o notificación a un celular. Consideramos que sería interesante poder diseñar alertas en base a métricas que se desen monitorear y que puedan ser de interés para lograr monitorear los recursos, la calidad y el rápido proceso de la liberación de código sin errores.
+También a partir de este resultado obtenido, vemos que es posible configurar el envío de mail o notificación a un celular. Consideramos que sería interesante poder diseñar alertas en base a métricas que se deseen monitorear y que puedan ser de interés para lograr monitorear los recursos, la calidad y el rápido proceso de la liberación de código sin errores.
 
 
 
