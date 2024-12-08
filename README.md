@@ -1,3 +1,4 @@
+![Imagen logo ORT](ortLogo.jpg)
 # Universidad ORT Uruguay
 
 ## Facultad de Ingeniería
@@ -216,6 +217,12 @@ Por último se muestra la imagen ya deployada en EKR construído mediante GitAct
 Ejemplo de imagen creada con Github Actions:
 
 ![ejemplo_imagen_en_ECR](https://github.com/user-attachments/assets/fe24fbd3-df1e-4d20-a22c-721b9ccfd4ef)
+---
+
+###DEPLOY DE APLICACIONES DE BACKEND
+
+Para el deploy de las aplicaciones de backend, se configuró mediante la herramienta Terraform los archivos necesarios para la construcción de toda la infraestructura diseñada y requerida en el proveedor de servicios AWS. 
+Se utilizó un clúster de Kubernetes con un balanceador de carga (Load Balancer) en AWS. El mismo tiene las aplicaciones ejecutándose dentro de contenedores Docker, imagenes que se obtuvieron de los respositorios previamente creados en AWS para alojar los aplicativos.
 
 
 ---
@@ -257,6 +264,32 @@ La siguiente imagen muestra los reporsitorios de imagenes que se crearon en AWS 
 
 AWS nos permite visualizar el estado del proceso terraform según la siguiente imagen.
 ![Imagen del status](images/StatusTerraform.jpeg)
+
+---
+
+
+## Aplicación de servicio Serverless
+
+Se utilizó el servicio serverless AWS Lambda para implementar y configurar una tarea automatizada que se acciona en respuesta a eventos de CI/CD, específicamente cada vez que se realiza un commit en la rama main del frontend de la aplicación.
+
+El script que ejecuta la función Lambda al ser invocada por el proceso de CI/CD está immplementado en phyton, pero se puede implementar en el lenguaje de preferencia (Python, Node.js, Java, Go, Ruby, .NET Core), dada la flexibilidad de compatibilidad de la herramienta. 
+A continuación se muestra la ejecución en GitHub del CI/CD posterior a la ejecución del commit, y el mensaje desplegado correctamente.
+
+
+
+![Imagen del código de la función lambda AWS](images/CodigoLambda.png)
+
+
+![Imagen ejecución Lamba AWS](images/pruebaEjecucionLambda.png)
+
+![Imagen del resultado de la ejecución Lamba AWS  ](images/ejecucionLambda.png)
+
+![Imagen ejecución Lamba AWS Git](images/LambdaGitHubAccions.png)
+
+
+También a partir de este resultado obtenido, vemos que es posible configurar el envío de mail o notificación a un celular. Consideramos que sería interesante poder diseñar alertas en base a métricas que se desen monitorear y que puedan ser de interés para lograr monitorear los recursos, la calidad y el rápido proceso de la liberación de código sin errores.
+
+
 
 ## Mejora a futuro
 
