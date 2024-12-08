@@ -1,4 +1,4 @@
-![Imagen logo ORT](ortLogo.jpg)
+![Imagen logo ORT](images/ortLogo.jpg)
 # Universidad ORT Uruguay
 
 ## Facultad de Ingeniería
