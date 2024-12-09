@@ -122,7 +122,7 @@ En los diagramas contiguos se muestra el flujo de etapas por las que avanzaría 
 
 ## Diagrama de Git flow
 
-![Diagrama de flujo](images/diagraGitFlow)
+![Diagrama de flujo](images/diagraGitFlow.png)
 
 ---
 
