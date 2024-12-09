@@ -112,7 +112,7 @@ En las siguientes imagen se muestra el listado de tareas que inicialmente fue de
 
 En los diagramas contiguos se muestra el flujo de etapas por las que avanzaría el proceso de CI/CD
 
-![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
+![Diagrama de flujo](images/diagramaCICD.png)
 
 
 
