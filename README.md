@@ -222,9 +222,15 @@ Ejemplo de imagen creada con Github Actions:
 ###DEPLOY DE APLICACIONES DE BACKEND
 
 Para el deploy de las aplicaciones de backend, se configuró mediante la herramienta Terraform los archivos necesarios para la construcción de toda la infraestructura diseñada y requerida en el proveedor de servicios AWS. 
-Se utilizó un clúster de Kubernetes con un balanceador de carga (Load Balancer) en AWS. El mismo tiene las aplicaciones ejecutándose dentro de contenedores Docker, imagenes que se obtuvieron de los respositorios previamente creados en AWS para alojar los aplicativos.
+Se utilizó un clúster de Kubernetes con un balanceador de carga (Load Balancer) en AWS. El mismo tiene las aplicaciones ejecutándose dentro de contenedores Docker, imagenes que se obtuvieron de los respositorios ECR, previamente creados en AWS para alojar los aplicativos.
+Cada aplicación cuenta con un Load Balancer que se utiliza para exponer las direcciones de cada microservicio. 
+La solución cuenta con un clúster EKS por ambiente (prod, dev, test), cada uno configurado para escalar automáticamente con un mínimo de 2 nodos, un máximo de 5, y un tamaño deseado de 3. Esto asegura eficiencia, disponibilidad y capacidad para manejar cargas variables.
+
+![Imagen de clusters](images/Clusters.jpg)
 
 
+
+![Imagen de clusters](images/ComponentesDeEKS.jpg)
 ---
 
 ## Pruebas de código estático
