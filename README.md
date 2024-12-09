@@ -114,9 +114,15 @@ En los diagramas contiguos se muestra el flujo de etapas por las que avanzaría 
 
 ![CI_CD Workflow](https://github.com/user-attachments/assets/b95eee95-7204-4ab7-9b81-66f3fa1186b6)
 
+
+
 ## Diagrama
 
 ![Diagrama](https://github.com/user-attachments/assets/eb352ba0-d57e-484d-bfca-255f8a06598e)
+
+## Diagrama de Git flow
+
+![Diagrama de flujo](images/diagraGitFlow)
 
 ---
 
