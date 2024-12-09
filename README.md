@@ -311,4 +311,15 @@ También a partir de este resultado obtenido, vemos que es posible configurar el
 
 ## Mejora a futuro
 
-Tenemos presente que las credenciales y secrets de aws se utilizan repetidamente en cada proyecto, al variar cada vez que se inicia el recurso AWS, no resulta nada práctico el estar cambiando en tantos lugares. Por lo que entendemos que de contar con más tiempo implementaríamos variables a nivel de la organización; para poder manejar estos datos cambiándolos en un único sitio y afectar a todos los repositorios que las utilizan. 
+Durante el desarrollo y la implementación de la arquitectura de microservicios, experimentamos problemas técnicos y de conectividad. A pesar de realizar múltiples intentos para resolver estos inconvenientes, no logramos superar todas las dificultades en el tiempo disponible. Creemos que con más investigación y tiempo podríamos lograr la correcta comunicación entre la aplicación orders y los otros tres microservicios.
+
+Tenemos presente que las credenciales y secrets de aws se utilizan repetidamente en cada proyecto, al variar cada vez que se inicia el recurso AWS, no resulta nada práctico el estar cambiando en tantos lugares. Por lo que entendemos que de contar con una cuenta con perfil Premium, implementaríamos variables a nivel de la organización; para poder manejar estos datos, cambiándolos en un único sitio y afectar a todos los repositorios que las utilizan. 
+
+Estuvimos trabajando en la implementación de la prueba automatizada de concurrencia con Postman, pero no fue posible completar por falta de tiempo. Por lo que continuaremos trabajando para que funcione correctamente.
+
+También vemos como una oportunidad de mejora la utilización de workspaces para simplificar el manejo de ambientes en el proceso de creación de infraestructura con Terraform.
+
+
+
+
+
