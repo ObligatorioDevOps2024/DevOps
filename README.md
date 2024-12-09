@@ -54,13 +54,17 @@ El objetivo es poder mediante los conocimientos, herramientas y laboratorios rea
 - **Orquestador:** Kubernetes para manejar los contenedores de los códigos fuente de las aplicaciones de backend.
 - **Empaquetado:** cada aplicación Java será alojada en un contenedor Docker.
 - **Configuración:** se generará un archivo Dockerfile vinculado al orquestador.
-
-Para cada uno de los aplicativos tanto de backend como de frontend, se presenta un documento .tf, que tiene especificado
-el script requerido para la creación de cada de cada una de los mismos.
+- **Automatización con Terraform:** Para cada uno de los aplicativos tanto de backend como de frontend, y para                                       cada uno de los ambientes de crearon varios archivos .tf, para mayor                                             organizacion a la hora de crear la infraestructura.  
 
 En el archivo está configurada la secuencia de comandos y parámetros necesarios, para que mediante la herramienta Terraform,
 se construyan los recursos indicados(el bucket S3 o el EKS según corresponda), se obtenga la imagen del aplicativo del repositorio referenciado y
 se despliegue automáticamente sobre el recurso creado si todo ejecutó correctamente.
+
+- **Flujo con GitHub Actions:** 
+Mediante GitHub Actions se ejecutan los Dockerfiles para construir las imágenes de las aplicaciones.
+Las imágenes generadas se almacenan en Amazon ECR, previamente configurado con Terraform.
+Usando kubectl, se recuperan las imágenes desde ECR y se despliegan en el clúster EKS, también creado con Terraform.
+
 
 ---
 
