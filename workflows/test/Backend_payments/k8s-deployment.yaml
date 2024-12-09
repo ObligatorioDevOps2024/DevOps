@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-payments-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: test-payments
+  template:
+    metadata:
+      labels:
+        app: test-payments
+    spec:
+      containers:
+        - name: test-payments
+          image: 218266829911.dkr.ecr.us-east-1.amazonaws.com/test-payments:latest
+          ports:
+            - containerPort: 8080

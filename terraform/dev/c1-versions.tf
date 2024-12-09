@@ -9,8 +9,8 @@ terraform {
   }
   # Adding Backend as S3 for Remote State Storage
   backend "s3" {
-    bucket = "terraform-devopslab"
-    key    = "stateObligatorio/terraform.tfstate"
+    bucket = "terraform-devopslab-dev"
+    key    = "state/terraform.tfstate"
     region = "us-east-1"
 
 

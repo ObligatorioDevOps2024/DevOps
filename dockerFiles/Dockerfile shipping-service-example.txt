@@ -17,7 +17,7 @@ WORKDIR /app
 COPY --from=build /app/target/shipping-service-example-0.0.1-SNAPSHOT-spring-boot.jar app.jar
 
 # Exponer el puerto en el que la aplicación se ejecutará
-EXPOSE 7000
+EXPOSE 6000
 
 # Ejecutar la aplicación
-CMD ["java", "-jar", "app.jar", "--server.port=7000"]
+CMD ["java", "-jar", "app.jar", "--server.port=6000"]

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-shipping-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: test-shipping
+  template:
+    metadata:
+      labels:
+        app: test-shipping
+    spec:
+      containers:
+        - name: test-shipping
+          image: 218266829911.dkr.ecr.us-east-1.amazonaws.com/test-shipping:latest
+          ports:
+            - containerPort: 8080

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dev-shipping-service
+spec:
+  selector:
+    app: dev-shipping
+  ports:
+    - protocol: TCP
+      port: 80           # Puerto externo al que se conecta
+      targetPort: 6000    # Puerto al que se conecta el contenedor
+  type: LoadBalancer      # Crea un Load Balancer en AWS

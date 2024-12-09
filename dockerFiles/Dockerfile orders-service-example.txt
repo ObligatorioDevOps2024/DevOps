@@ -20,4 +20,9 @@ COPY --from=build /app/target/orders-service-example-0.0.1-SNAPSHOT-spring-boot.
 EXPOSE 6500
 
 # Ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "app.jar", "--server.port=6500"]
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["--server.port=6500", \
+     "--payments.service.url=${PAYMENTS_SERVICE_URL}", \
+     "--shipping.service.url=${SHIPPING_SERVICE_URL}", \
+     "--products.service.url=${PRODUCTS_SERVICE_URL}"]

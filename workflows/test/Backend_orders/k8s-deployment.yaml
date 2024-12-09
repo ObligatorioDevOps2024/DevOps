@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-orders-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: test-orders
+  template:
+    metadata:
+      labels:
+        app: test-orders
+    spec:
+      containers:
+        - name: prod-orders
+          image: 218266829911.dkr.ecr.us-east-1.amazonaws.com/test-orders:latest
+          ports:
+            - containerPort: 6500
+          env:
+            - name: PAYMENTS_SERVICE_URL
+              value: "http://test-backend-payments-service.default.svc.cluster.local:80"
+            - name: SHIPPING_SERVICE_URL
+              value: "http://test-backend-shipping-service.default.svc.cluster.local:80"
+            - name: PRODUCTS_SERVICE_URL
+              value: "http://test-backend-products-service.default.svc.cluster.local:80"
+

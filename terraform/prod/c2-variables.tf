@@ -1,4 +1,4 @@
-# Input Variables
+# Variables prod
 variable "aws_region" {
   description = "Region in which AWS Resources to be created"
   type        = string
@@ -8,12 +8,11 @@ variable "aws_region" {
 variable "s3_bucket_name" {
   description = "Bucket para frontend de obligatorio"
   type        = string
-  default     = "front-obligatorio"
+  default     = "prod-front-obligatorio"
 }
 
 variable "ecr_repo_name" {
   description = "Nombre para repo ECR"
   type        = list(string)
-  default     = ["orders", "payments", "products", "shipping"]
+  default     = ["prod-orders", "prod-payments", "prod-products", "prod-shipping"]
 }
-

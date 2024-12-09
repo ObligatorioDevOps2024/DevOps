@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prod-payments-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: prod-payments
+  template:
+    metadata:
+      labels:
+        app: prod-payments
+    spec:
+      containers:
+        - name: prod-payments
+          image: 218266829911.dkr.ecr.us-east-1.amazonaws.com/prod-payments:latest
+          ports:
+            - containerPort: 8080
