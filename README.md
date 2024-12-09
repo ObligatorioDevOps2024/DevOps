@@ -230,11 +230,11 @@ Se utilizó un clúster de Kubernetes con un balanceador de carga (Load Balancer
 Cada aplicación cuenta con un Load Balancer que se utiliza para exponer las direcciones de cada microservicio. 
 La solución cuenta con un clúster EKS por ambiente (prod, dev, test), cada uno configurado para escalar automáticamente con un mínimo de 2 nodos, un máximo de 5, y un tamaño deseado de 3. Esto asegura eficiencia, disponibilidad y capacidad para manejar cargas variables.
 
-![Imagen de clusters](images/Clusters.jpg)
+![Imagen de clusters](images/Clusters.png)
 
 
 
-![Imagen de clusters](images/ComponentesDeEKS.jpg)
+![Imagen de clusters](images/ComponentesDelEKS.png)
 ---
 
 ## Pruebas de código estático
